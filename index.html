@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>新進同仁工作適應經驗分享邀請</title>
+<meta name="description" content="國立中山大學人力資源管理研究所碩士論文研究邀請：一起聊聊，剛進入新工作的這段旅程。完全自願參與。">
+<!-- LINE／社群分享預覽 -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="一起聊聊，剛進入新工作的這段旅程">
+<meta property="og:description" content="新進同仁工作適應經驗分享邀請｜國立中山大學人資所碩士論文研究｜完全自願參與">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#1F3A5F">
+<style>
+  :root{
+    --navy:#1F3A5F; --navy-2:#2E4E78; --navy-soft:#E6ECF3;
+    --cream:#F8F4EC; --paper:#FFFDF9; --line:#E7E0D2;
+    --sage:#8BA888; --sage-deep:#557256; --sage-soft:#E8EFE5;
+    --ink:#2B3340; --muted:#5F6875;
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--cream); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei","Heiti TC",sans-serif;
+    font-size:16.5px; line-height:1.8; letter-spacing:.02em;
+  }
+  .wrap{max-width:640px; margin:0 auto; padding:0 18px}
+
+  /* 頁首 */
+  header{
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 100%);
+    color:#fff; padding:44px 0 56px; position:relative; overflow:hidden;
+  }
+  header::after{
+    content:""; position:absolute; right:-60px; bottom:-80px; width:220px; height:220px;
+    border-radius:50%; background:var(--sage); opacity:.18;
+  }
+  .tag{
+    display:inline-flex; align-items:center; gap:6px; font-size:13px;
+    background:rgba(255,255,255,.14); padding:4px 12px; border-radius:99px; margin-bottom:18px;
+  }
+  h1{font-size:clamp(25px,6.6vw,32px); line-height:1.45; margin:0 0 14px; font-weight:700; letter-spacing:.03em}
+  .lead{margin:0; color:#DCE5EF; font-size:15.5px}
+  .path{display:flex; align-items:center; gap:8px; margin-top:26px; position:relative; z-index:1}
+  .path span{width:10px;height:10px;border-radius:50%;background:var(--sage);flex:none}
+  .path i{flex:1;height:2px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.5) 0 6px,transparent 6px 12px)}
+  .path small{font-size:12px;color:#C9D6E4;font-style:normal}
+
+  main{margin-top:-28px; position:relative; z-index:2; padding-bottom:28px}
+  section.card{
+    background:var(--paper); border:1px solid var(--line); border-radius:var(--radius);
+    padding:24px 20px; margin-bottom:16px; box-shadow:0 2px 10px rgba(31,58,95,.05);
+  }
+  h2{display:flex; align-items:center; gap:10px; font-size:19px; color:var(--navy); margin:0 0 12px; line-height:1.5}
+  .ic{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;flex:none;background:var(--sage-soft);color:var(--sage-deep)}
+  .ic svg{width:20px;height:20px}
+  p{margin:0 0 10px}
+  p:last-child{margin-bottom:0}
+  .muted{color:var(--muted); font-size:15px}
+
+  /* 訪談資訊 */
+  .facts{display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:14px}
+  .fact{background:var(--navy-soft); border-radius:14px; padding:12px 14px}
+  .fact b{display:block; color:var(--navy); font-size:17px}
+  .fact small{color:var(--muted); font-size:13px}
+
+  /* 頁籤 */
+  .tabs{display:grid; grid-template-columns:repeat(3,1fr); gap:6px; background:var(--cream); padding:5px; border-radius:14px; margin:14px 0 16px}
+  .tab{
+    appearance:none; border:0; background:transparent; border-radius:10px; padding:10px 4px;
+    font:inherit; font-size:15px; color:var(--muted); cursor:pointer; line-height:1.3;
+  }
+  .tab b{display:block; font-size:18px; color:inherit}
+  .tab[aria-selected="true"]{background:var(--navy); color:#fff; box-shadow:0 2px 6px rgba(31,58,95,.25)}
+  .tab:focus-visible{outline:3px solid var(--sage); outline-offset:2px}
+  .panel h3{margin:0 0 4px; font-size:17px; color:var(--sage-deep)}
+  .panel .sub{font-size:14px; color:var(--muted); margin-bottom:12px}
+  .panel ol{list-style:none; margin:0; padding:0; counter-reset:n}
+  .panel li{
+    counter-increment:n; position:relative; padding:12px 14px 12px 50px; margin-bottom:8px;
+    background:var(--sage-soft); border-radius:12px;
+  }
+  .panel li::before{
+    content:counter(n); position:absolute; left:14px; top:12px; width:24px; height:24px; border-radius:50%;
+    background:var(--sage-deep); color:#fff; font-size:13px; display:grid; place-items:center; line-height:1;
+  }
+  .panel[hidden]{display:none}
+  .fade{animation:fade .25s ease}
+  @keyframes fade{from{opacity:0; transform:translateY(4px)}to{opacity:1; transform:none}}
+  .hint{font-size:14px; color:var(--muted); margin-top:10px}
+
+  /* 不需要準備 */
+  .nolist{display:grid; gap:10px; margin-top:6px}
+  .no{display:flex; align-items:center; gap:12px; padding:12px 14px; border:1.5px dashed var(--sage); border-radius:14px}
+  .no svg{width:22px;height:22px;color:var(--sage-deep);flex:none}
+  .no b{color:var(--navy)}
+
+  /* 自願 */
+  .voluntary{background:var(--navy); color:#fff; border:0}
+  .voluntary h2{color:#fff}
+  .voluntary .ic{background:rgba(255,255,255,.14); color:#fff}
+  .chips{display:flex; flex-wrap:wrap; gap:8px; margin:12px 0}
+  .chips span{background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.25); padding:3px 12px; border-radius:99px; font-size:14.5px}
+  .voluntary p{color:#E2E9F1}
+
+  /* 同意書 */
+  .btn{
+    display:flex; align-items:center; justify-content:center; gap:8px; width:100%;
+    padding:14px; border-radius:14px; font:inherit; font-size:16px; text-decoration:none; font-weight:600;
+    background:var(--sage-deep); color:#fff; border:0;
+  }
+  .btn.pending{background:#E9E4D8; color:#7A7468; cursor:not-allowed; font-weight:500}
+  .btn svg{width:20px;height:20px}
+
+  /* 聯絡 */
+  dl.contact{margin:6px 0 0; display:grid; grid-template-columns:auto 1fr; gap:8px 14px}
+  dl.contact dt{color:var(--muted); font-size:14.5px; white-space:nowrap}
+  dl.contact dd{margin:0; color:var(--navy); font-weight:600; word-break:break-all}
+  dl.contact a{color:var(--navy)}
+  .ph{background:#FFF3C4; color:#6B5A10; padding:0 4px; border-radius:4px; font-weight:500}
+
+  footer{padding:8px 0 40px; font-size:13.5px; color:var(--muted); text-align:center; line-height:1.7}
+  footer .note{background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:14px 16px; text-align:left; margin-bottom:16px}
+
+  @media (prefers-reduced-motion:reduce){.fade{animation:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="tag">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+      碩士論文研究邀請
+    </div>
+    <h1>一起聊聊，<br>剛進入新工作的這段旅程</h1>
+    <p class="lead">新進同仁工作適應經驗分享邀請</p>
+    <div class="path" aria-hidden="true">
+      <span></span><small>30天</small><i></i><span></span><small>60天</small><i></i><span></span><small>90天</small>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- 研究介紹 -->
+  <section class="card" aria-labelledby="s-about">
+    <h2 id="s-about"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></span>關於這份邀請</h2>
+    <p>你好，我是公司人資部門的同仁，同時也是<strong>國立中山大學人力資源管理研究所</strong>在職專班的碩士研究生。</p>
+    <p>在公司的支持下，我正在進行一項碩士論文研究，想了解新進同仁剛加入時的<strong>工作適應</strong>經驗、感受到的<strong>組織支持</strong>，以及影響<strong>留任</strong>想法的歷程。</p>
+    <p class="muted">每一位新同仁的經驗都很珍貴，你的分享能幫助我們更理解，怎樣的支持對新同仁真正有幫助。</p>
+  </section>
+
+  <!-- 訪談方式 -->
+  <section class="card" aria-labelledby="s-how">
+    <h2 id="s-how"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>訪談怎麼進行？</h2>
+    <p>採用<strong>一對一質性訪談</strong>，像聊天一樣，聽你說說這段時間的工作經驗與感受。</p>
+    <div class="facts">
+      <div class="fact"><small>形式</small><b>一對一對談</b></div>
+      <div class="fact"><small>每次時間</small><b>約 45 至 60 分鐘</b></div>
+      <div class="fact" style="grid-column:1/-1"><small>時間安排</small><b>依雙方方便的時間協調</b></div>
+    </div>
+  </section>
+
+  <!-- 30/60/90 頁籤 -->
+  <section class="card" aria-labelledby="s-journey">
+    <h2 id="s-journey"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></span>這段旅程的三個階段</h2>
+    <p class="muted">點選下方階段，看看每個時期可以留意的工作經驗。</p>
+
+    <div class="tabs" role="tablist" aria-label="工作適應階段">
+      <button class="tab" role="tab" id="t30" aria-controls="p30" aria-selected="true" tabindex="0"><b>30</b>天</button>
+      <button class="tab" role="tab" id="t60" aria-controls="p60" aria-selected="false" tabindex="-1"><b>60</b>天</button>
+      <button class="tab" role="tab" id="t90" aria-controls="p90" aria-selected="false" tabindex="-1"><b>90</b>天</button>
+    </div>
+
+    <div class="panel fade" role="tabpanel" id="p30" aria-labelledby="t30" tabindex="0">
+      <h3>工作期待與初期適應</h3>
+      <div class="sub">剛到職的第一個月</div>
+      <ol>
+        <li>當初選擇這份工作時，心裡懷抱著哪些期待</li>
+        <li>實際上班後，哪些事和想像中一樣、哪些不太一樣</li>
+        <li>哪些人或安排，讓你比較快熟悉環境</li>
+      </ol>
+    </div>
+    <div class="panel" role="tabpanel" id="p60" aria-labelledby="t60" tabindex="0" hidden>
+      <h3>工作學習與主管同事支持</h3>
+      <div class="sub">逐漸上手的第二個月</div>
+      <ol>
+        <li>遇到不熟悉的工作時，你通常怎麼學、向誰請教</li>
+        <li>主管或同事的哪些做法，讓你感覺被支持</li>
+        <li>哪些地方，你希望能有多一點協助</li>
+      </ol>
+    </div>
+    <div class="panel" role="tabpanel" id="p90" aria-labelledby="t90" tabindex="0" hidden>
+      <h3>工作回顧與未來期待</h3>
+      <div class="sub">滿三個月的回顧</div>
+      <ol>
+        <li>回頭看這三個月，自己有哪些成長或改變</li>
+        <li>哪些經驗讓你想繼續留下，或讓你有所猶豫</li>
+        <li>對接下來的工作與發展，你有什麼期待</li>
+      </ol>
+    </div>
+    <p class="hint">以上只是輕鬆的提醒，放在心上就好，不需要寫下來。</p>
+  </section>
+
+  <!-- 不需要準備 -->
+  <section class="card" aria-labelledby="s-prep">
+    <h2 id="s-prep"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>你不需要做任何準備</h2>
+    <div class="nolist">
+      <div class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg><span><b>不需要</b>事先填寫任何資料</span></div>
+      <div class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg><span><b>不需要</b>寫日記或做任何紀錄</span></div>
+      <div class="no"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg><span><b>沒有</b>標準答案，你的真實感受最重要</span></div>
+    </div>
+  </section>
+
+  <!-- 完全自願 -->
+  <section class="card voluntary" aria-labelledby="s-vol">
+    <h2 id="s-vol"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>完全自願參與</h2>
+    <p>是否參與，完全由你決定。參加與否、或中途決定不再參加，都<strong>不會影響</strong>你的：</p>
+    <div class="chips"><span>任用</span><span>薪資</span><span>排班</span><span>績效</span><span>其他工作權益</span></div>
+    <p>這是一項學術研究，並非公司考核或評量。</p>
+  </section>
+
+  <!-- 知情同意書 -->
+  <section class="card" aria-labelledby="s-consent">
+    <h2 id="s-consent"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span>正式研究參與知情同意書</h2>
+    <p class="muted">研究目的、訪談方式、資料保密與使用方式等完整說明，請以正式知情同意書為準。</p>
+    <!-- 同意書 PDF 需與 index.html 放在同一資料夾，檔名為 consent-form.pdf -->
+    <a class="btn" id="consent-link" href="consent-form.pdf" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+      閱讀正式研究參與知情同意書
+    </a>
+    <p class="muted" style="margin-top:10px;text-align:center;font-size:13.5px">PDF 檔｜同意書版本：第一版（2026 年 08 月 07 日）</p>
+  </section>
+
+  <!-- 聯絡資訊 -->
+  <section class="card" aria-labelledby="s-contact">
+    <h2 id="s-contact"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>有任何疑問，歡迎聯絡我</h2>
+    <dl class="contact">
+      <dt>研究者</dt><dd>陳怡勲</dd>
+      <dt>所屬</dt><dd>國立中山大學人力資源管理研究所 在職專班</dd>
+      <dt>指導教授</dt><dd>葉致微 助理教授</dd>
+      <dt>Email</dt><dd><a href="mailto:greyshiness@gmail.com">greyshiness@gmail.com</a></dd>
+    </dl>
+    <p class="muted" style="margin-top:12px">也歡迎在工作空檔當面詢問，了解之後再決定即可。</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="note">本頁面僅供介紹研究及提供工作經驗提醒，不蒐集任何個人資料或瀏覽紀錄。正式研究參與與訪談安排，須依經確認的知情同意書辦理。</div>
+    國立中山大學 人力資源管理研究所｜碩士論文研究
+  </div>
+</footer>
+
+<script>
+(function(){
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function select(tab, focus){
+    tabs.forEach(function(t){
+      var on = t === tab;
+      t.setAttribute('aria-selected', on);
+      t.tabIndex = on ? 0 : -1;
+      var p = document.getElementById(t.getAttribute('aria-controls'));
+      p.hidden = !on;
+      p.classList.toggle('fade', on);
+    });
+    if (focus) tab.focus();
+  }
+  tabs.forEach(function(t, i){
+    t.addEventListener('click', function(){ select(t); });
+    t.addEventListener('keydown', function(e){
+      var n = null;
+      if (e.key === 'ArrowRight') n = tabs[(i + 1) % tabs.length];
+      if (e.key === 'ArrowLeft')  n = tabs[(i - 1 + tabs.length) % tabs.length];
+      if (e.key === 'Home') n = tabs[0];
+      if (e.key === 'End')  n = tabs[tabs.length - 1];
+      if (n){ e.preventDefault(); select(n, true); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
